@@ -1,39 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulacka</title>
-    <script src="scripts.js"></script>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulacka</title>
+  <script src="scripts.js"></script>
+  <link rel="stylesheet" href="styles.css">
+
+  <script>
+   
+  </script>
+
 </head>
+
 <body>
-    <div class="calculator_main">
-        <div class="_ctverec">
-            <p>CTVEREC</p>
-            <form>
-                <label for="strana-a_c">Strana a: </label>
-                <input type="text" name="strana-a_c" id="strana-a_c" autocomplete="off"><br>
-                <input type="button" onclick="vypocitejCtverec()" value="Vypocitej">
-            </form>
-            <p id="ccv"></p>
-        </div>
-
-        <div class="_obdelnik">
-            <p>OBDELNIK</p>
-            <form>
-                <label for="strana-a_o">Strana a: </label>
-                <input type="text" name="strana-a_o" id="strana-a_o" autocomplete="off"><br>
-
-                <label for="strana-b_o">Strana b: </label>
-                <input type="text" name="strana-b_o" id="strana-b_o" autocomplete="off"><br>
-                <input type="button" onclick="vypocitejObdelnik()" value="Vypocitej">
-            </form>
-            <p id="oov"></p>
-        </div>
-
-        <div class="_lichobeznik"></div>
+  <div class="header">
+    <a href="index.html" class="logo"><img src="/img/logoprojekt.png" alt="'LOGO'" width="40px" height="40px"></img>
+      <p>Interaktivní Matematika</p>
+    </a>
+    <div class="header-right">
+      <a href="index.html">Domů</a>
+      <a href="about.html">O Projektu</a>
     </div>
+  </div>
+  <div class="calculator_main">
+    <div class="_ctverec border">
+      <p>CTVEREC</p>
+      <form>
+        <label for="strana-a_c">Strana a: </label>
+        <input type="text" name="strana-a_c" id="strana-a_c" class="textbox" autocomplete="off"><br>
+        <input type="button" onclick="vypocitejCtverec()" value="Vypocitej">
+      </form>
+      <p id="ccv"></p>
+    </div>
+
+    <div class="_obdelnik border">
+      <p>OBDELNIK</p>
+      <form>
+        <label for="strana-a_o">Strana a: </label>
+        <input type="text" name="strana-a_o" id="strana-a_o" class="textbox" autocomplete="off"><br>
+
+        <label for="strana-b_o">Strana b: </label>
+        <input type="text" name="strana-b_o" id="strana-b_o" class="textbox" autocomplete="off"><br>
+        <input type="button" onclick="vypocitejObdelnik()" value="Vypocitej">
+      </form>
+      <p id="oov"></p>
+    </div>
+
+    <div class="_trojuhelnik border">
+      <p>TROJUHELNIK</p>
+      <form>
+        <label for="strana-a_t">Strana a: </label>
+        <input type="text" name="strana-a_t" id="strana-a_t" class="textbox" autocomplete="off"><br>
+
+        <label for="strana-b_t">Strana b: </label>
+        <input type="text" name="strana-b_t" id="strana-b_t" class="textbox" autocomplete="off"><br>
+
+        <label for="strana-c_t">Strana c: </label>
+        <input type="text" name="strana-c_t" id="strana-c_t" class="textbox" autocomplete="off"><br>
+        <input type="button" onclick="vypocitejTrojuhelnik()" value="Vypocitej">
+      </form>
+    </div>
+  </div>
+
+  <canvas id="myCanvas" width="200" height="100" style="border:1px solid #ffffff;">
+  </canvas>
+
 </body>
+
 </html>
