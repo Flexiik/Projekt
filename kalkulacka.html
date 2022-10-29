@@ -55,18 +55,63 @@
         <label for="strana-a_t">Strana a: </label>
         <input type="text" name="strana-a_t" id="strana-a_t" class="textbox" autocomplete="off"><br>
 
-        <label for="strana-b_t">Strana b: </label>
-        <input type="text" name="strana-b_t" id="strana-b_t" class="textbox" autocomplete="off"><br>
+        <label for="va_t">Výška na stranu a: </label>
+        <input type="text" name="va_t" id="va_t" class="textbox" autocomplete="off"><br>
 
-        <label for="strana-c_t">Strana c: </label>
-        <input type="text" name="strana-c_t" id="strana-c_t" class="textbox" autocomplete="off"><br>
         <input type="button" onclick="vypocitejTrojuhelnik()" value="Vypocitej">
       </form>
+      <p id="ttv"></p>
     </div>
+
+    <div class="_lichobeznik border">
+      <p>LICHOBEZNIK</p>
+      <form>
+        <label for="strana-a_l">Strana a: </label>
+        <input type="text" name="strana-a_l" id="strana-a_l" class="textbox" autocomplete="off"><br>
+
+        <label for="strana-b_l">Strana b: </label>
+        <input type="text" name="strana-b_l" id="strana-b_l" class="textbox" autocomplete="off"><br>
+
+        <label for="strana-c_l">Strana c: </label>
+        <input type="text" name="strana-c_l" id="strana-c_l" class="textbox" autocomplete="off"><br>
+
+        <label for="strana-d_l">Strana d: </label>
+        <input type="text" name="strana-d_l" id="strana-d_l" class="textbox" autocomplete="off"><br>
+
+        <label for="vyska_l">Výška: </label>
+        <input type="text" name="vyska_l" id="vyska_l" class="textbox" autocomplete="off"><br>
+
+        <input type="button" onclick="vypocitejLichobeznik()" value="Vypocitej">
+      </form>
+      <p id="llv"></p>
+    </div>
+
+    <div class="_rovnobeznik border">
+      <p>ROVNOBEZNIK</p>
+      <form>
+        <label for="strana-a_r">Strana d: </label>
+        <input type="text" name="strana-a_r" id="strana-a_r" class="textbox" autocomplete="off"><br>
+
+        <label for="vyska_r">Výška: </label>
+        <input type="text" name="vyska_r" id="vyska_r" class="textbox" autocomplete="off"><br>
+
+        <input type="button" onclick="vypocitejRovnobeznik()" value="Vypocitej">
+      </form>
+      <p id="rrv"></p>
+    </div>
+
+    <div class="_kruh border">
+      <p>KRUH</p>
+      <form>
+        <label for="strana-a_k">Poloměr: </label>
+        <input type="text" name="strana-a_k" id="strana-a_k" class="textbox" autocomplete="off"><br>
+        <input type="button" onclick="vypocitejKruh()" value="Vypocitej">
+      </form>
+      <p id="kkv"></p>
+    </div>
+
   </div>
 
-  <canvas id="myCanvas" width="200" height="100" style="border:1px solid #ffffff;">
-  </canvas>
 
 </body>
 

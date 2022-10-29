@@ -23,25 +23,80 @@ function vypocitejObdelnik() {
 
 
 //trojuhelnik
+function vypocitejTrojuhelnik() {
+  let a = parseFloat(document.getElementById("strana-a_t").value);
+  let va = parseFloat(document.getElementById("va_t").value);
 
-//lichobeznik
-//rovnobeznik
-//kruh
+  ///Vypocty///
+  let obsah = ((a*va)/2).toFixed(2)
+  /////
 
-var i = 0;
-var txt = 'Lorem ipsum dummy text blabla.';
-var speed = 50;
-
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("demo").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
+  let text;
+  if (isNaN(a) || a <= 0 || isNaN(va) || va <= 0) {
+    text = "Nevalidni input";
+  } else {
+    text = "Obsah: " + obsah + "cm&sup2"
   }
+  document.getElementById("ttv").innerHTML = text;
 }
 
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
-ctx.beginPath();
-ctx.arc(95, 50, 40, 0, 2 * Math.PI);
-ctx.stroke();
+
+//lichobeznik
+function vypocitejLichobeznik() {
+  let a = parseFloat(document.getElementById("strana-a_l").value);
+  let b = parseFloat(document.getElementById("strana-b_l").value);
+  let c = parseFloat(document.getElementById("strana-c_l").value);
+  let d = parseFloat(document.getElementById("strana-d_l").value);
+  let h = parseFloat(document.getElementById("vyska_l").value);
+
+  ///Vypocty///
+  let obvod = (a + b + c + d).toFixed(2);
+  let obsah = (0.5 * (a + b) * h).toFixed(2);
+  /////
+
+  let text;
+  if (isNaN(a) || isNaN(b) || isNaN(c) || isNaN(d) || a <= 0 || b <= 0 || c <= 0 || d <= 0) {
+    text = "Nevalidni input";
+  } else {
+    text = "Obvod: " + obvod + "cm<br>Obsah: " + obsah + "cm&sup2";
+  }
+  document.getElementById("llv").innerHTML = text;
+}
+
+//rovnobeznik
+function vypocitejRovnobeznik() {
+  let a = document.getElementById("strana-a_r").value;
+  let h = document.getElementById("vyska_r").value;
+  let text;
+  if (isNaN(a) || a <= 0 || isNaN(h) || h <= 0) {
+    text = "Nevalidni input";
+  } else {
+    text = "Povrch: " + (a*h).toFixed(2) + "cm&sup2";
+  }
+  document.getElementById("rrv").innerHTML = text;
+}
+
+
+//kruh
+function vypocitejKruh() {
+  let r = document.getElementById("strana-a_k").value;
+  let text;
+  if (isNaN(r) || r <= 0) {
+    text = "Nevalidni input";
+  } else {
+    text = "Povrch: " + (Math.PI * (r * r)).toFixed(2) + "cm&sup2<br>Obvod: " + (2 * Math.PI * r).toFixed(2) + "cm";
+  }
+  document.getElementById("kkv").innerHTML = text;
+}
+
+// let a = 4
+// let b = 5
+// let c = 6
+// let d = 7
+//
+// let obvod = a + b + c + d;
+// let s = obvod/2;
+// let v = (2/Math.abs(a-c)) * Math.sqrt((s-a)*(s-c)*(s-b-c)*(s-d-c));
+// let obsah = ((a+c)*v)/2
+//
+// alert("Obvod: " + obvod + "cm<br>Výška: " + v + "cm<br>Obsah: " + obsah + "cm&sup2")
