@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kalkulacka</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <script src="scripts.js"></script>
   <link rel="stylesheet" href="styles.css">
 
@@ -17,40 +18,41 @@
 
 <body>
   <div class="header">
-    <a href="index.html" class="logo"><img src="/img/logoprojekt.png" alt="'LOGO'" width="40px" height="40px"></img>
-      <p>Interaktivní Matematika</p>
-    </a>
+    <a href="index.html" class="logo"><img src="/img/logoprojekt.png" alt="'LOGO'" width="40px" height="40px"></img></a>
     <div class="header-right">
       <a href="index.html">Domů</a>
       <a href="about.html">O Projektu</a>
     </div>
   </div>
+  <div class="__container">
+    <h1>Vzorce</h1>
+  </div>
   <div class="calculator_main">
     <div class="_ctverec border">
-      <p>CTVEREC</p>
+      <h2>Čtverec</h2>
       <form>
         <label for="strana-a_c">Strana a: </label>
         <input type="text" name="strana-a_c" id="strana-a_c" class="textbox" autocomplete="off"><br>
-        <input type="button" onclick="vypocitejCtverec()" value="Vypocitej">
+        <input type="button" class="button-calc" onclick="vypocitejCtverec()" value="Vypočítat">
       </form>
       <p id="ccv"></p>
     </div>
-
+    <hr>
     <div class="_obdelnik border">
-      <p>OBDELNIK</p>
+      <h2>Obdelník</h2>
       <form>
         <label for="strana-a_o">Strana a: </label>
         <input type="text" name="strana-a_o" id="strana-a_o" class="textbox" autocomplete="off"><br>
 
         <label for="strana-b_o">Strana b: </label>
         <input type="text" name="strana-b_o" id="strana-b_o" class="textbox" autocomplete="off"><br>
-        <input type="button" onclick="vypocitejObdelnik()" value="Vypocitej">
+        <input type="button" class="button-calc" onclick="vypocitejObdelnik()" value="Vypočítat">
       </form>
       <p id="oov"></p>
     </div>
-
+    <hr>
     <div class="_trojuhelnik border">
-      <p>TROJUHELNIK</p>
+      <h2>Trojúhelník</h2>
       <form>
         <label for="strana-a_t">Strana a: </label>
         <input type="text" name="strana-a_t" id="strana-a_t" class="textbox" autocomplete="off"><br>
@@ -58,13 +60,13 @@
         <label for="va_t">Výška na stranu a: </label>
         <input type="text" name="va_t" id="va_t" class="textbox" autocomplete="off"><br>
 
-        <input type="button" onclick="vypocitejTrojuhelnik()" value="Vypocitej">
+        <input type="button" class="button-calc" onclick="vypocitejTrojuhelnik()" value="Vypočítat">
       </form>
       <p id="ttv"></p>
     </div>
-
+    <hr>
     <div class="_lichobeznik border">
-      <p>LICHOBEZNIK</p>
+      <h2>Lichoběžník</h2>
       <form>
         <label for="strana-a_l">Strana a: </label>
         <input type="text" name="strana-a_l" id="strana-a_l" class="textbox" autocomplete="off"><br>
@@ -81,37 +83,57 @@
         <label for="vyska_l">Výška: </label>
         <input type="text" name="vyska_l" id="vyska_l" class="textbox" autocomplete="off"><br>
 
-        <input type="button" onclick="vypocitejLichobeznik()" value="Vypocitej">
+        <input type="button" class="button-calc" onclick="vypocitejLichobeznik()" value="Vypočítat">
       </form>
       <p id="llv"></p>
     </div>
-
+    <hr>
     <div class="_rovnobeznik border">
-      <p>ROVNOBEZNIK</p>
+      <h2>Rovnoběžník</h2>
       <form>
-        <label for="strana-a_r">Strana d: </label>
+        <label for="strana-a_r">Strana a: </label>
         <input type="text" name="strana-a_r" id="strana-a_r" class="textbox" autocomplete="off"><br>
 
         <label for="vyska_r">Výška: </label>
         <input type="text" name="vyska_r" id="vyska_r" class="textbox" autocomplete="off"><br>
 
-        <input type="button" onclick="vypocitejRovnobeznik()" value="Vypocitej">
+        <input type="button" class="button-calc" onclick="vypocitejRovnobeznik()" value="Vypočítat">
       </form>
       <p id="rrv"></p>
     </div>
-
+    <hr>
     <div class="_kruh border">
-      <p>KRUH</p>
+      <h2>Kružnice</h2>
       <form>
         <label for="strana-a_k">Poloměr: </label>
         <input type="text" name="strana-a_k" id="strana-a_k" class="textbox" autocomplete="off"><br>
-        <input type="button" onclick="vypocitejKruh()" value="Vypocitej">
+        <input type="button" class="button-calc" onclick="vypocitejKruh()" value="Vypočítat">
       </form>
       <p id="kkv"></p>
     </div>
 
   </div>
-
+  <footer class="site-footer2">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>O Nás</h6>
+          <p class="text-justify">Náš účel byl vytvořit webovou stránku, která by umožnila studentům rychle a
+            efektivně pracovat s vzorečky a s geometrií v prostředí Geogebry.</p>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Vytvořili studenti
+            <a href="https://ossp.cz" class="ossp-link">OSSP</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 
