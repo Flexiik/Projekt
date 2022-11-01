@@ -89,21 +89,28 @@ function vypocitejKruh() {
   document.getElementById("kkv").innerHTML = text;
 }
 
+var isLoggedIn = false;
+
 /////////////////////////////////
-window.addEventListener('load', function () {
-  const canvas = document.getElementById('canvas1');
-  const ctx = canvas.getContext('2d')
+// window.addEventListener('load', function () {
+//   if (!isLoggedIn) {
+//     window.location.replace("https://matematika.ossp.cz/login.html")
+//   }
+// })
 
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+////////////
 
-  ctx.fillRect(120, 150, 100, 200)
-})
+function login() {
+  const nick = document.getElementById("nick").value
+  const password = document.getElementById("password").value
+  if (nick == "Flexiik" || nick == "MattheX"){
+    if(password == "dev") {
+      window.location.replace("https://matematika.ossp.cz/index.html")
+      isLoggedIn = true;
+    }
+  }
+}
 
-window.addEventListener('load', function () {
-  const iframe = document.getElementById('ifr');
-  iframe.width = window.width;
-})
 
 
 

@@ -8,7 +8,6 @@ body, html {
   font-family: 'Noto Sans', sans-serif;
   font-weight: 400;
   min-height: 100%;
-  overflow: hidden;
 }
 
 .__container {
@@ -302,7 +301,6 @@ input[type=text] {
 
     word-break: unset;
     word-wrap: unset;
-    overflow-wrap: unset;
     -webkit-hyphens: unset;
     -moz-hyphens: unset;
     -ms-hyphens: unset;
