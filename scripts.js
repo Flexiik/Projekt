@@ -16,7 +16,7 @@ function vypocitejObdelnik() {
   if (isNaN(x) || x <= 0 || isNaN(y) || y <= 0) {
     text = "Nevalidni input";
   } else {
-    text = "Povrch: " + x * y + "cm&sup2<br>Obvod: " + ((x * 2) + (y * 2)) + "cm<br>Uhlopricka: " + Math.sqrt(x ^ 2 + y ^ 2).toFixed(2) + "cm";
+    text = "Povrch: " + x * y + "cm&sup2<br>Obvod: " + ((x * 2) + (y * 2)) + "cm<br>Uhlopricka: " + Math.sqrt(x * x + y * y).toFixed(2) + "cm";
   }
   document.getElementById("oov").innerHTML = text;
 }
@@ -88,3 +88,35 @@ function vypocitejKruh() {
   }
   document.getElementById("kkv").innerHTML = text;
 }
+
+/////////////////////////////////
+window.addEventListener('load', function () {
+  const canvas = document.getElementById('canvas1');
+  const ctx = canvas.getContext('2d')
+
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  ctx.fillRect(120, 150, 100, 200)
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
