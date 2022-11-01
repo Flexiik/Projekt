@@ -88,15 +88,3 @@ function vypocitejKruh() {
   }
   document.getElementById("kkv").innerHTML = text;
 }
-
-// let a = 4
-// let b = 5
-// let c = 6
-// let d = 7
-//
-// let obvod = a + b + c + d;
-// let s = obvod/2;
-// let v = (2/Math.abs(a-c)) * Math.sqrt((s-a)*(s-c)*(s-b-c)*(s-d-c));
-// let obsah = ((a+c)*v)/2
-//
-// alert("Obvod: " + obvod + "cm<br>Výška: " + v + "cm<br>Obsah: " + obsah + "cm&sup2")
