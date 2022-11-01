@@ -92,11 +92,11 @@ function vypocitejKruh() {
 var isLoggedIn = false;
 
 /////////////////////////////////
-// window.addEventListener('load', function () {
-//   if (!isLoggedIn) {
-//     window.location.replace("https://matematika.ossp.cz/login.html")
-//   }
-// })
+window.addEventListener('load', function () {
+  if (!isLoggedIn) {
+    window.location.replace("https://matematika.ossp.cz/login.html")
+  }
+})
 
 ////////////
 
