@@ -25,7 +25,6 @@ body, html {
 }
 
 .header {
-  overflow: hidden;
   
   background-color: #f1f1f1;
 
@@ -292,3 +291,48 @@ input[type=text] {
 .about {
   padding-left: 1rem;
 }
+
+.gelipa {
+  text-align: center; 
+  display: grid;
+  position: relative;
+  border: green solid 2px;
+  margin: 12.5em auto;
+  width: 50%;
+  transform: translate(0, -50%);
+}
+.gelipa a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0.5rem;
+}
+
+.gelipa a:hover {
+  color: #737373;
+}
+
+.gemap {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  border-radius: 12px;
+  border: #003652 solid 5px;
+  background: #004e75;
+  position: fixed;
+  width: 15%;
+  
+}
+
+.gemap a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0.5rem;
+}
+
+.gemap a:hover {
+  color: #717171;
+}
+
+.gelipa p {
+  padding-top: 5000px;
+}
+
