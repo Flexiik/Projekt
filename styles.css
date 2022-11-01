@@ -16,7 +16,13 @@ body, html {
   top: 0;
   text-align: center;
   height: 100%;
-  
+}
+
+.__container ul {
+  font-size: 12px;
+  width: 50rem;
+  margin: auto;
+  text-align: left;
 }
 
 .container {
