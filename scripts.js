@@ -100,6 +100,10 @@ window.addEventListener('load', function () {
   ctx.fillRect(120, 150, 100, 200)
 })
 
+window.addEventListener('load', function () {
+  const iframe = document.getElementById('ifr');
+  iframe.width = window.width;
+})
 
 
 
