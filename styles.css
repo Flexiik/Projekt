@@ -294,10 +294,9 @@ input[type=text] {
 
 .gelipa {
   text-align: center; 
-  display: grid;
   position: relative;
-  border: green solid 2px;
-  margin: 25em auto 0 auto;
+  margin: 22em auto 0 auto;
+  display: block;
   width: 50%;
   transform: translate(0, -50%);
 }
@@ -318,8 +317,7 @@ input[type=text] {
   border: #003652 solid 5px;
   background: #004e75;
   position: fixed;
-  width: 15%;
-  
+  width: fit-content;
 }
 
 .gemap a {
@@ -336,3 +334,8 @@ input[type=text] {
   padding-top: 5000px;
 }
 
+@media screen and (max-width: 500px) {
+  .gemap {
+    visibility: hidden;
+  }
+}
