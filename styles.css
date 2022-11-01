@@ -83,6 +83,9 @@ body, html {
 
 .__link {
     visibility: hidden;
+    position: absolute;
+    top: 300px;
+    text-align: center;
 }
 
 #ifr {
