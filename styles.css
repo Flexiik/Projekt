@@ -124,7 +124,6 @@ h1, h2 {
     border-radius: 14px;
     min-height: 100px;
     max-width: 50rem;
-    overflow: hidden;
     text-align:left;
     display:inline-block;
 }
