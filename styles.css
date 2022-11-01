@@ -75,6 +75,14 @@ body, html {
   float: right;
 }
 
+.__link {
+    visibility: hidden;
+}
+
+#ifr {
+    visibility: visible;
+}
+
 @media screen and (max-width: 600px) {
   .header a {
     float: none;
@@ -88,6 +96,14 @@ body, html {
 
   .site-footer{
     visibility: hidden;
+  }
+
+  #ifr {
+      visibility: hidden;
+  }
+
+  .__link {
+      visibility: visible;
   }
 }
 

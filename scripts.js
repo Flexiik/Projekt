@@ -89,29 +89,6 @@ function vypocitejKruh() {
   document.getElementById("kkv").innerHTML = text;
 }
 
-var isLoggedIn = false;
-
-/////////////////////////////////
-window.addEventListener('load', function () {
-  if (!isLoggedIn) {
-    window.location.replace("https://matematika.ossp.cz/login.html")
-  }
-})
-
-////////////
-
-function login() {
-  const nick = document.getElementById("nick").value
-  const password = document.getElementById("password").value
-  if (nick == "Flexiik" || nick == "MattheX"){
-    if(password == "dev") {
-      window.location.replace("https://matematika.ossp.cz/index.html")
-      isLoggedIn = true;
-    }
-  }
-}
-
-
 
 
 
